@@ -3,6 +3,7 @@ package com.example.windowfittingissue;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 import com.example.windowfittingissue.databinding.ActivityMainBinding;
 
@@ -19,5 +20,8 @@ public class MainActivity extends AppCompatActivity {
 		getSupportActionBar().setBackgroundDrawable(null);
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_close_x);
+		View headingImage = findViewById(R.id.header_image);
+		headingImage.setOnApplyWindowInsetsListener((view, windowInsets) ->
+				windowInsets);
 	}
 }

@@ -21,6 +21,7 @@
 			tools:ignore="UnusedAttribute"/>
 
 		<ImageView
+			android:id="@+id/header_image"
 			android:fitsSystemWindows="true"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
